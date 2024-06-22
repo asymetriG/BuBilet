@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE8E64A8-A50E-44EE-B6F6-5696726A3974}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProlabWithFP</RootNamespace>
+    <AssemblyName>ProlabWithFP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompanyForm.Designer.cs">
+      <DependentUpon>AddCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addRoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRoadForm.Designer.cs">
+      <DependentUpon>addRoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addVehicleForm.Designer.cs">
+      <DependentUpon>addVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busWithFifteenSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busWithFifteenSeats.Designer.cs">
+      <DependentUpon>busWithFifteenSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busWithTwentySeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busWithTwentySeats.Designer.cs">
+      <DependentUpon>busWithTwentySeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTicketPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyTicketPanel.Designer.cs">
+      <DependentUpon>BuyTicketPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs" />
+    <Compile Include="dailyProfitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dailyProfitForm.Designer.cs">
+      <DependentUpon>dailyProfitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fuel.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Airplane.cs" />
+    <Compile Include="Bus.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirmPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmPanel.Designer.cs">
+      <DependentUpon>FirmPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILoginable.cs" />
+    <Compile Include="IProfitable.cs" />
+    <Compile Include="IReservable.cs" />
+    <Compile Include="Passenger.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Personel.cs" />
+    <Compile Include="planeWithThirtySeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="planeWithThirtySeats.Designer.cs">
+      <DependentUpon>planeWithThirtySeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reklam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reklam.Designer.cs">
+      <DependentUpon>Reklam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCompanyForm.Designer.cs">
+      <DependentUpon>RemoveCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeRoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeRoadForm.Designer.cs">
+      <DependentUpon>removeRoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeVehicleForm.Designer.cs">
+      <DependentUpon>removeVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs" />
+    <Compile Include="Road.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="ServicePayPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicePayPanel.Designer.cs">
+      <DependentUpon>ServicePayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showRoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showRoad.Designer.cs">
+      <DependentUpon>showRoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Train.cs" />
+    <Compile Include="trainWithTwentyFiveSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainWithTwentyFiveSeats.Designer.cs">
+      <DependentUpon>trainWithTwentyFiveSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.cs" />
+    <Compile Include="Trip.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="AddCompanyForm.resx">
+      <DependentUpon>AddCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRoadForm.resx">
+      <DependentUpon>addRoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVehicleForm.resx">
+      <DependentUpon>addVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busWithFifteenSeats.resx">
+      <DependentUpon>busWithFifteenSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busWithTwentySeats.resx">
+      <DependentUpon>busWithTwentySeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicketPanel.resx">
+      <DependentUpon>BuyTicketPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailyProfitForm.resx">
+      <DependentUpon>dailyProfitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmPanel.resx">
+      <DependentUpon>FirmPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="planeWithThirtySeats.resx">
+      <DependentUpon>planeWithThirtySeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reklam.resx">
+      <DependentUpon>Reklam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCompanyForm.resx">
+      <DependentUpon>RemoveCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeRoadForm.resx">
+      <DependentUpon>removeRoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeVehicleForm.resx">
+      <DependentUpon>removeVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicePayPanel.resx">
+      <DependentUpon>ServicePayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showRoad.resx">
+      <DependentUpon>showRoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainWithTwentyFiveSeats.resx">
+      <DependentUpon>trainWithTwentyFiveSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Company.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-no-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-black-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Road Less Travelled Motivational Instagram Post  %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcali-cizgi-desen-dijital-baskili-halihtml-salon-resmiro-2097-70-K.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gri-arkaplan-1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gri-arkaplan-19201.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
